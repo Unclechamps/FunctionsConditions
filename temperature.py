@@ -7,9 +7,11 @@ convert = input("Do you want to convert to Faren or Celsius? ")
 
 def temperature():
     if convert == "Faren" or convert == "faren":
-        print (round((inittemp * (9/5) + 32), 2))
+        tempf = (round((inittemp * (9/5) + 32), 2))
+        print (f"The temperature is {tempf}F.")
     elif convert == "Celsius" or convert == "celsius":
-        print (round((inittemp - 32) / (9/5), 2))
+        tempc = (round((inittemp - 32) / (9/5), 2))
+        print (f"The temperature is {tempc}C.")
     else:
         print ("Convert to what!?")
 
